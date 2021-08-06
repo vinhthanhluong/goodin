@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_64" data-name="Rectangle 64" width="12" height="12" transform="translate(663 2854)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-comment" transform="translate(-663 -2854)" clip-path="url(#clip-path)">
+    <g id="chat_6_" data-name="chat (6)" transform="translate(663 2854)">
+      <g id="Group_42" data-name="Group 42">
+        <g id="Group_41" data-name="Group 41">
+          <path id="Path_28" data-name="Path 28" d="M6.027,0s-.01,0-.019,0A5.887,5.887,0,0,0,1.391,9.559L.533,11.552a.32.32,0,0,0,.167.421A.327.327,0,0,0,.883,12l3.148-.553a5.672,5.672,0,0,0,1.961.341A5.892,5.892,0,0,0,6.027,0ZM6,11.144a5.161,5.161,0,0,1-1.817-.331.308.308,0,0,0-.17-.016l-2.649.463.7-1.63a.323.323,0,0,0-.051-.338,5.14,5.14,0,0,1-.894-1.485A5.249,5.249,0,1,1,11.252,5.864v.019A5.264,5.264,0,0,1,6,11.144Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_44" data-name="Group 44">
+        <g id="Group_43" data-name="Group 43">
+          <path id="Path_29" data-name="Path 29" d="M5.744,4.717H4.008a.322.322,0,1,0,0,.643H5.744a.322.322,0,1,0,0-.643Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_46" data-name="Group 46">
+        <g id="Group_45" data-name="Group 45">
+          <path id="Path_30" data-name="Path 30" d="M7.995,6.324H4.008a.322.322,0,1,0,0,.643H7.995a.322.322,0,1,0,0-.643Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

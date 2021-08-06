@@ -1,0 +1,46 @@
+.main-cl{
+    color: $main-cl;
+}
+
+.w-cl{
+    color: $w-cl;
+}
+
+.f-medium{
+    font-weight: 500;
+}
+
+.t-capitalize{
+    text-transform: capitalize;
+}
+
+
+.box-flex{
+    position: fixed;
+    top: 50%;
+    right: 22px;
+    background-color: $main-cl;
+    color: $w-cl;
+    padding: 13px 17px 12px;
+    border-radius: 6px 6px 0 0;
+    transform-origin: right;
+    transform: translateY(-50%) rotate(-90deg);
+    transition: all .3s ease;
+    cursor: pointer;
+    z-index: 99;
+    @include max-media($bk-d-768){
+        padding: 10px 10px 9px;
+        right: 19px;
+    }
+
+    &:hover{
+        background-color: rgba($color: $main-cl, $alpha: .6);
+    }
+}
+
+.container-n{
+    max-width: 100%;
+    width: 1470px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

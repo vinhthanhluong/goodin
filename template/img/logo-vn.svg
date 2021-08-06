@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="24" height="24" rx="12" transform="translate(1521 28)" fill="#a70503"/>
+    </clipPath>
+  </defs>
+  <g id="logo-vn" transform="translate(-1521 -28)" clip-path="url(#clip-path)">
+    <g id="vietnam_2_" data-name="vietnam (2)" transform="translate(1521 28)">
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="12" cy="12" r="12" fill="#a70503"/>
+      <path id="Path_59" data-name="Path 59" d="M12,6.261l1.3,3.986h4.191L14.1,12.71l1.3,3.986L12,14.232,8.61,16.7,9.9,12.71l-3.39-2.463H10.7Z" fill="#ffda44"/>
+    </g>
+  </g>
+</svg>
