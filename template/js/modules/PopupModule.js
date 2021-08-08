@@ -1,5 +1,5 @@
 export default function PopupModule(){
-    $('.popup-title').magnificPopup({
+    $('.popup-account').magnificPopup({
         
         // closeOnContentClick: true,
         type: 'inline',
@@ -10,7 +10,7 @@ export default function PopupModule(){
 		// It looks not nice, so we disable it:
 		callbacks: {
 			beforeOpen: function() {
-				if($(window).width() < 700) {
+				if($(window).width() < 768) {
 					this.st.focus = false;
 				} else {
 					this.st.focus = '#name';

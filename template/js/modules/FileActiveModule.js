@@ -31,4 +31,10 @@ export default function FileActiveModule() {
     $(window).on('resize', function () {
         rpLogin();
     });
+
+    // if ($('.header-right').length) {
+    //     $('.popup-account').on('click', function () {
+    //         $('.wrapper').addClass('active');
+    //     });
+    // }
 }

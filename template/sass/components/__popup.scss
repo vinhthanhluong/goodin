@@ -41,7 +41,7 @@ html {
 	@include custom-scrollbar(2px);
 }
 .mfp-content {
-	max-width: 600px;
+	max-width: 860px;
 	.mfp-close {
 		color: $main-cl;
 		transition: 0.3s;
@@ -68,4 +68,19 @@ html {
 }
 .swal2-shown {
 	padding-right: 0 !important;
+}
+
+.white-popup-block{
+	max-width: 860px;
+	padding: 0;
+}
+
+.mfp-bg{
+	background: none;
+}
+
+.wrapper{
+	&.active{
+		filter: blur(29px);
+	}
 }
