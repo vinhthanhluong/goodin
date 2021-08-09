@@ -20,7 +20,7 @@ export default function FileActiveModule() {
                 }
             });
 
-            $('.login-icon').on('click', function () {
+            $('.login-box').on('click', function () {
                 $logs.toggleClass('active');
             });
         }
@@ -35,6 +35,16 @@ export default function FileActiveModule() {
     // if ($('.header-right').length) {
     //     $('.popup-account').on('click', function () {
     //         $('.wrapper').addClass('active');
+    //     });
+
+    //     $('.mfp-close-btn-in').on('click', function () {
+    //         $('.wrapper').removeClass('active');
+    //         console.log(987);
+    //     });
+
+    //     $('.mfp-close').on('click', function () {
+    //         $('.wrapper').removeClass('active');
+    //         console.log(123);
     //     });
     // }
 }

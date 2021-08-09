@@ -1,5 +1,5 @@
 export default function PopupModule(){
-    $('.popup-account').magnificPopup({
+    $('.popup-account , .text-forgot').magnificPopup({
         
         // closeOnContentClick: true,
         type: 'inline',

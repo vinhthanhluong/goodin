@@ -1,7 +1,7 @@
 export default function SlideModule(){
-    function slideOne() {
-        if (document.querySelector('.slide-one')) {
-            const swiper = document.querySelector('.slide-one');
+    function slideAbout() {
+        if (document.querySelector('.slide-about')) {
+            const swiper = document.querySelector('.slide-about');
             const sliderContainer = swiper.querySelector('.swiper-container');
             const SliderPagination = swiper.querySelector('.swiper-pagination-orange');
             const sliderPrevBtn = swiper.querySelector('.swiper-prev');
@@ -9,10 +9,10 @@ export default function SlideModule(){
             try {
                 const swiper = new Swiper(sliderContainer, {
                     speed: 1000,
-                    loop: true,
-                    slidesPerView: 1,
+                    loop: false,
+                    slidesPerView: 3,
                     // autoHeight: true,
-                    //spaceBetween: 20,
+                    spaceBetween: 30,
                     // autoplay: {
                     //     delay: 4000,
                     // },
@@ -21,6 +21,8 @@ export default function SlideModule(){
                         clickable: true,
                     },
 
+                    slidesPerColumnFill: 'row',
+                    slidesPerColumn: '2',
                     // navigation: {
                     //     nextEl: '.swiper-button-next',
                     //     prevEl: '.swiper-button-prev',
@@ -39,8 +41,52 @@ export default function SlideModule(){
         }
     }
 
-    $('.slide-one').length && slideOne();
+    $('.slide-about').length && slideAbout();
 
+    function slideBrand() {
+        if (document.querySelector('.slide-brand')) {
+            const swiper = document.querySelector('.slide-brand');
+            const sliderContainer = swiper.querySelector('.swiper-container');
+            const SliderPagination = swiper.querySelector('.swiper-pagination-orange');
+            const sliderPrevBtn = swiper.querySelector('.swiper-prev');
+            const sliderNextBtn = swiper.querySelector('.swiper-next');
+            try {
+                const swiper = new Swiper(sliderContainer, {
+                    speed: 1000,
+                    loop: false,
+                    slidesPerView: 6,
+                    allowTouchMove: false,
+                    // autoHeight: true,
+                    // spaceBetween: 30,
+                    // autoplay: {
+                    //     delay: 4000,
+                    // },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+
+                    slidesPerColumnFill: 'row',
+                    slidesPerColumn: '2',
+                    // navigation: {
+                    //     nextEl: '.swiper-button-next',
+                    //     prevEl: '.swiper-button-prev',
+                    // },
+
+                   
+                    // observeParents:true,
+                    // observeSlideChildren: true,
+                    // observer: true,
+                })
+            }
+            catch (err) {
+                console.log(err)
+            }
+
+        }
+    }
+
+    $('.slide-brand').length && slideBrand();
 
     if (document.querySelector('#slideasd')) {
         const swiper = document.querySelector('#slideasd');

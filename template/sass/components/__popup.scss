@@ -37,11 +37,13 @@ html {
 }
 .mfp-container {
 	padding: 0;
-	overflow-y: auto;
-	@include custom-scrollbar(2px);
+	// overflow-y: auto;
+	// overflow: hidden;
+	// @include custom-scrollbar(2px);
 }
 .mfp-content {
 	max-width: 860px;
+	overflow: hidden;
 	.mfp-close {
 		color: $main-cl;
 		transition: 0.3s;
@@ -76,7 +78,7 @@ html {
 }
 
 .mfp-bg{
-	background: none;
+	// background: none;
 }
 
 .wrapper{

@@ -130,7 +130,7 @@
                                     <div class="text-login">
                                         <a class="popup-account" href="#popup-sigup">Đăng ký</a>
                                         <span>/</span>
-                                        <a class="popup-account" href="#popup-sigup">Đăng nhập</a>
+                                        <a class="popup-account" href="#popup-login">Đăng nhập</a>
                                     </div>
                                 </div>
                             </div>
@@ -1190,12 +1190,12 @@
         </div>
 
         <!-- form popup login -->
-        <div id="popup-sigup" class="mfp-hide white-popup-block">
+        <div id="popup-login" class="mfp-hide white-popup-block">
             <div class="popup-wrapper">
                 <div class="popup-cols">
                     <div class="popup-col">
                         <div class="popup-img">
-                            <img src="./img/popup-sigup.png" alt="popup-sigup.png">
+                            <img src="./img/popup-login.png" alt="popup-login.png">
                         </div>
                     </div>
                     <div class="popup-col">
@@ -1216,7 +1216,7 @@
                                         <label class="label tt-12 t-uppercase">
                                             mật khẩu
                                         </label>
-                                        <input type="text" class="popup-f f-control">
+                                        <input type="password" class="popup-f f-control">
                                     </div>
 
                                     <div class="popup-form popup-tx">
@@ -1226,18 +1226,19 @@
                                                 <span>Ghi nhớ tài khoản</span>
                                             </div>
                                         </label>
-                                        <a href="#" class="popup-forgot main-cl">
+                                        <a href="#popup-forgot" class="text-forgot main-cl">
                                             Quên mật khẩu ?
                                         </a>
                                     </div>
                                     <div class="popup-submit">
                                         <input type="submit" value="Đăng nhập" class="f-submit">
                                     </div>
-                                    <div class="popup-nottk">
-                                        <span>Bạn chưa có tài khoản </span><a href="#" class="sigup-now">Đăng ký
-                                            ngay</a>
-                                    </div>
+                                   
                                 </form>
+                            </div>
+                            <div class="popup-nottk">
+                                <span>Bạn chưa có tài khoản </span><a href="#" class="sigup-now">Đăng ký
+                                    ngay</a>
                             </div>
                         </div>
                     </div>
@@ -1257,43 +1258,101 @@
                     <div class="popup-col">
                         <div class="popup-inner">
                             <h3 class="popup-title tt-20 f-bold">
-                                Đăng nhập
+                                Đăng ký tài khoản
                             </h3>
                             <div class="popup-content">
                                 <form action="#">
                                     <div class="popup-form">
                                         <label class="label tt-12 t-uppercase">
-                                            tên đăng nhập/email
+                                            Tên đăng nhập
                                         </label>
-
                                         <input type="text" class="popup-f f-control">
                                     </div>
                                     <div class="popup-form">
                                         <label class="label tt-12 t-uppercase">
-                                            mật khẩu
+                                            Tên hiển thị
                                         </label>
                                         <input type="text" class="popup-f f-control">
                                     </div>
-
-                                    <div class="popup-form popup-tx">
-                                        <label class="label-i">
-                                            <input type="checkbox" name="tets">
-                                            <div class="checkmark">
-                                                <span>Ghi nhớ tài khoản</span>
-                                            </div>
+                                    <div class="popup-form">
+                                        <label class="label tt-12 t-uppercase">
+                                            Số điện thoại
                                         </label>
-                                        <a href="#" class="popup-forgot main-cl">
-                                            Quên mật khẩu ?
-                                        </a>
+                                        <input type="text" class="popup-f f-control">
                                     </div>
+                                    <div class="popup-form">
+                                        <label class="label tt-12 t-uppercase">
+                                            Email
+                                        </label>
+                                        <input type="text" class="popup-f f-control">
+                                    </div>
+                                    <div class="popup-form">
+                                        <label class="label tt-12 t-uppercase">
+                                            Mật khẩu
+                                        </label>
+                                        <input type="password" class="popup-f f-control">
+                                    </div>
+                                    <div class="popup-form">
+                                        <label class="label tt-12 t-uppercase">
+                                            Nhập lại mật khẩu
+                                        </label>
+                                        <input type="password" class="popup-f f-control">
+                                    </div>
+
+                                    
                                     <div class="popup-submit">
-                                        <input type="submit" value="Đăng nhập" class="f-submit">
+                                        <input type="submit" value="Đăng ký" class="f-submit">
                                     </div>
-                                    <div class="popup-nottk">
-                                        <span>Bạn chưa có tài khoản </span><a href="#" class="sigup-now">Đăng ký
-                                            ngay</a>
-                                    </div>
+                                   
                                 </form>
+                            </div>
+                            <div class="popup-nottk">
+                                <span>Bạn đã có tài khoản </span><a href="#" class="sigup-now">Đăng nhập
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- form popup forgot pass -->
+        <div id="popup-forgot" class="mfp-hide white-popup-block">
+            <div class="popup-wrapper">
+                <div class="popup-cols">
+                    <div class="popup-col">
+                        <div class="popup-img">
+                            <img src="./img/popup-forgot.png" alt="popup-forgot.png">
+                        </div>
+                    </div>
+                    <div class="popup-col">
+                        <div class="popup-inner t-center popup-forgot">
+                            <h3 class="popup-title tt-20 f-bold">
+                                Quên mật khẩu ?
+                            </h3>
+                            <div class="popup-content">
+                                <form action="#">
+                                    <div class="popup-form">
+                                        <label class="label tt-12 t-uppercase">
+                                            Nhập email
+                                        </label>
+
+                                        <input type="text" class="popup-f f-control t-center">
+                                    </div>
+                                   <div class="popup-text tt-12 f-italic">
+                                       <p>Một đường link kích hoat sẽ được gửi đến email của bạn</p>
+                                   </div>
+
+                                    
+                                    <div class="popup-submit">
+                                        <input type="submit" value="Xác nhận" class="f-submit">
+                                    </div>
+                                   
+                                </form>
+                            </div>
+                            <div class="popup-nottk">
+                                <span>Bạn đã có tài khoản </span><a href="#" class="sigup-now">Đăng nhập
+                                    </a>
                             </div>
                         </div>
                     </div>
