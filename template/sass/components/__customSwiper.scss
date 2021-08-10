@@ -4,14 +4,15 @@
     }
 
     .swiper-pagination-bullet {
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
         margin: 0 6px;
+        background-color: $w-cl;
+        border: 1px solid rgba($color: $g-7070-cl, $alpha: .8);
     }
 
     .swiper-pagination-bullet-active {
-        background-color: $main-cl;
-        width: 8px;
-        height: 8px;
+        border-color: $main-cl;
+        border-width: 2px;
     }
 }

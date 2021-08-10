@@ -4,38 +4,46 @@
 	li {
 		display: inline-block;
 		vertical-align: middle;
+		&:not(:first-child){
+			margin-left: 6px;
+		}
 		.page-numbers {
-			width: 40px;
-			height: 40px;
+			width: 30px;
+			height: 30px;
 			border-radius: 100%;
-			border: 1px solid $border-cl;
-			//color: $t-b-cl;
+			border: 1px solid rgba($color: $g-7070-cl, $alpha: .2);
+			color: rgba($color: $t-b-cl, $alpha: .7);
 			font-weight: bold;
 			transition: all .3 ease;
 			@include lh(24, 14);
 			@include flex-mid;
+			font-size: 12px;
 			&.current {
 				background-color: $main-cl;
-				color: $t-w-cl;
+				color: rgba($color: $w-cl, $alpha: .7);
 				border: 1px solid transparent;
 			}
 			&:hover {
 				background-color: $main-cl;
-				color: $t-w-cl;
+				color: rgba($color: $w-cl, $alpha: .7);
 				border: 1px solid transparent;
 			}
 		}
 
-		.page-arrow{
-			width: 40px;
-			height: 40px;
-			@include flex-mid;
-			font-size: 16px;
-			transition: all .3 ease;
-			&:hover {
-				background-color: $main-cl;
-				color: $t-w-cl;
-			}
+		.page-dot{
+			margin: 0 10px;
 		}
+
+		// .page-arrow{
+		// 	width: 40px;
+		// 	height: 40px;
+		// 	@include flex-mid;
+		// 	font-size: 16px;
+		// 	transition: all .3 ease;
+		// 	&:hover {
+		// 		background-color: $main-cl;
+		// 		color: $t-w-cl;
+		// 	}
+		// }
 	}
 }

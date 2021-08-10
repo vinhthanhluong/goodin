@@ -1,0 +1,51 @@
+.bsearch{
+    .search-box{
+        position: relative;
+        .f-submit{
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            font-size: 24px;
+            color: $main-cl;
+            
+        }
+
+
+        .f-control{
+            border: none;
+            border-bottom: 1px solid $main-cl;
+            border-radius: 0;
+            padding: 0px;
+            padding-left: 40px;
+            padding-bottom: 20px;
+            padding-right: 200px;
+            @include fz-30;
+            height: auto;
+            &::placeholder{
+                color: rgba($color: $b-cl, $alpha: .4);
+                font-style: italic;
+            }
+            
+        }
+    }
+
+
+    .search-wrapper{
+        position: relative;
+        .breadcrumb{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: max-content;
+        }
+    }
+
+    
+}

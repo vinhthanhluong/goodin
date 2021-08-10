@@ -1,0 +1,69 @@
+.post-featured{
+    .post-title{
+        margin-bottom: 25px;
+        @include lh(38,30);
+    }
+    
+    .swiper-pagination{
+        display: none;
+    }
+}
+
+.post-news{
+
+    .swiper-container{
+        padding-bottom: 50px;
+    }
+
+    .home-box{
+        display: flex;
+        align-items: center;
+        &:not(:first-child){
+            margin-top: 15px;
+            @include max-media($bk-d-992){
+                margin-top: 10px;
+            }
+        }
+        .home-img{
+            width: 100%;
+            max-width: 170px;
+            @include max-media($bk-576){
+                max-width: 145px;
+            }
+        }
+        .home-content{
+            width: calc(100% - 170px);
+            padding-left: 30px;
+            margin-top: 0;
+            @include max-media($bk-d-1200){
+                padding-left: 15px;
+            }
+            @include max-media($bk-d-992){
+                padding-left: 10px;
+            }
+            @include max-media($bk-576){
+                width: calc(100% - 145px);
+            }
+
+           
+        }
+    }
+
+    .post-title{
+        margin-bottom: 25px;
+        @include lh(38,30);
+    }
+}
+
+.post-fashion{
+    .column{
+        width: calc(100% / 12 * 4);
+    }
+
+    .post-title{
+        margin-bottom: 25px;
+        @include lh(38,30);
+    }
+
+
+}

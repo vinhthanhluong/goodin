@@ -4,10 +4,14 @@
     .breadcrumb-menu {
         display: flex;
         justify-content: flex-end;
-        padding: 10px 0;
+        // padding: 10px 0;
+
+        @include  max-media($bk-d-768){
+            justify-content: flex-start;
+        }
 
         @include max-media($bk-576) {
-            overflow-x: scroll;
+            overflow-x: auto;
             white-space: nowrap;
         }
 
