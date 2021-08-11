@@ -3,6 +3,10 @@
         margin-bottom: 30px;
         padding-bottom: 20px;
         position: relative;
+        @include max-media($bk-d-992){
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
 
         &::before {
             content: '';
@@ -17,12 +21,17 @@
 
     .accounts-content{
         display: flex;
+        flex-wrap: wrap;
 
     }
 
     .accounts-infomation{
         display: flex;
         width: calc(100% / 12 * 4);
+        @include max-media($bk-d-768){
+            width: 100%;
+            margin-bottom: 15px;
+        }
         .accounts-img{
             width: 70px;
             height: 70px;
@@ -37,6 +46,10 @@
         .accounts-tx{
             padding-left: 15px;
             width: calc(100% - 70px);
+            @include max-media($bk-d-992){
+                padding-left: 10px;
+                padding-right: 5px;
+            }
         }
 
         .accounts-label{
@@ -52,11 +65,25 @@
     .accounts-ifo{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: calc(100% / 12 * 8);
+        @include max-media($bk-d-768){
+            width: 100%;
+            margin: -5px;
+        }
+
+        @include max-media($bk-576){
+        
+        }
 
         .accounts-box{
             display: flex;
             align-items: center;
+            padding: 5px;
+
+            @include max-media($bk-576){
+                width: 50%;
+            }
             
         }
 
@@ -75,13 +102,23 @@
         .tab-link{
             border-top: 1px solid rgba($color: $g-7070-cl , $alpha: .2);
             border-bottom: 1px solid rgba($color: $g-7070-cl , $alpha: .2);
+            @include max-media($bk-576){
+                border: 1px solid rgba($color: $g-7070-cl , $alpha: .2);
+                border-top: none;
+            }
         }
 
         .tab-title{
             padding: 15px;
 
+            @include max-media($bk-576){
+                padding: 10px;
+            }
             &:first-child{
                 padding-left: 0;
+                @include max-media($bk-576){
+                    padding-left: 10px;
+                }
             }
 
             &.active{
@@ -91,16 +128,14 @@
                 }
             }
         }
-
-        .tab-content{
-        }
-
-      
     }
 
     .accounts-lpost{
         .column{
             width: calc(100% / 12 * 4);
+            @include max-media($bk-d-992){
+                width: calc(100% / 12 * 6);
+            }
         }
         padding-top: 30px;
         padding-bottom: 60px;
@@ -114,6 +149,7 @@
         .accounts-box{
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             border-bottom: 1px solid rgba($color: $g-7070-cl , $alpha: .2);
             padding: 20px 0;
             &:first-child{
@@ -124,13 +160,21 @@
         .accounts-tx{
             width: calc(100% / 12 * 6 + 30px);
             transition: all .3s ease;
+            padding-right: 10px;
             &:hover{
                 color: $main-cl;
+            }
+            @include max-media($bk-d-768){
+                width: 100%;
             }
         }
 
         .accounts-date{
-            width: 110px;
+            width: 130px;
+            padding: 0 10px;
+            @include max-media($bk-d-768){
+                padding: 10px 10px 0 0;                
+            }
         }
 
         .accounts-sta{
@@ -140,6 +184,10 @@
             position: relative;
             padding-left: 10px;
             text-align: right;
+            @include max-media($bk-d-768){
+                padding: 10px 0 0 10px;
+            }
+            
             &::before{
                 content: '\f111 ';
                 font-family: 'Fontawesome';
@@ -164,6 +212,9 @@
 
         .pagination{
             margin-top: 60px;
+            @include max-media($bk-d-992){
+                margin-top: 30px;
+            }
         }
     }
 
@@ -177,11 +228,24 @@
             display: flex;
             flex-wrap: wrap;
             margin: -12.5px -15px;
+            @include max-media($bk-d-992){
+                width: 100%;
+                margin: -7.5px;
+            }
+            @include max-media($bk-576){
+                width: 100%;
+            }
         }
 
         .accounts-group{
             width: 50%;
             padding: 12.5px 15px;
+            @include max-media($bk-d-992){
+                padding: 7.5px;
+            }
+            @include max-media($bk-576){
+                width: 100%;
+            }
         }
 
         .account-label{

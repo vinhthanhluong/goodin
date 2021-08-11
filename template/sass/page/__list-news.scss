@@ -2,10 +2,21 @@
     .post-title{
         margin-bottom: 25px;
         @include lh(38,30);
+        @include max-media($bk-d-992){
+            margin-bottom: 15px;
+        }
     }
     
     .swiper-pagination{
         display: none;
+        @include max-media($bk-d-768){
+            display: block;
+        }
+    }
+    .swiper-container{
+        @include max-media($bk-d-768){
+            padding-bottom: 40px;
+        }
     }
 }
 
@@ -52,17 +63,26 @@
     .post-title{
         margin-bottom: 25px;
         @include lh(38,30);
+        @include max-media($bk-d-992){
+            margin-bottom: 15px;
+        }
     }
 }
 
 .post-fashion{
     .column{
         width: calc(100% / 12 * 4);
+        @include max-media($bk-d-992){
+            width: calc(100% / 12 * 6);
+        }
     }
 
     .post-title{
         margin-bottom: 25px;
         @include lh(38,30);
+        @include max-media($bk-d-992){
+            margin-bottom: 15px;
+        }
     }
 
 

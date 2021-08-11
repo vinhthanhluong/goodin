@@ -319,11 +319,13 @@
 .about-brand {
     
     .swiper-wrapper{
-        border: 1px solid #D9D9D9;
+        // border: 1px solid #D9D9D9;
+        border-bottom: 1px solid #D9D9D9;
     }
 
     .swiper-container{
-      
+        border: 1px solid #D9D9D9;
+        border-bottom: 0;
         @include max-media($bk-d-1024){
             padding-bottom: 30px;
         }

@@ -1,4 +1,4 @@
-export default function SlideModule(){
+export default function SlideModule() {
     function slideAbout() {
         if (document.querySelector('.slide-about')) {
             const swiper = document.querySelector('.slide-about');
@@ -56,8 +56,8 @@ export default function SlideModule(){
                 const swiper = new Swiper(sliderContainer, {
                     speed: 1000,
                     loop: false,
-                    
-                    
+
+
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,
@@ -113,7 +113,7 @@ export default function SlideModule(){
                     loop: true,
                     slidesPerView: 2,
                     // autoHeight: true,
-                    spaceBetween: 30,
+                    // spaceBetween: 30,
                     autoplay: {
                         delay: 4000,
                     },
@@ -122,16 +122,17 @@ export default function SlideModule(){
                         clickable: true,
                     },
 
-                    
-                    // navigation: {
-                    //     nextEl: '.swiper-button-next',
-                    //     prevEl: '.swiper-button-prev',
-                    // },
-
-                   
-                    // observeParents:true,
-                    // observeSlideChildren: true,
-                    // observer: true,
+                    breakpoints: {
+                        320: {
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            spaceBetween: 20,
+                        },
+                        1200: {
+                            spaceBetween: 30,
+                        },
+                    }
                 })
             }
             catch (err) {
@@ -154,28 +155,33 @@ export default function SlideModule(){
                 const swiper = new Swiper(sliderContainer, {
                     speed: 1000,
                     loop: false,
-                    slidesPerView: 2,
-                    // autoHeight: true,
-                    spaceBetween: 30,
-                    // autoplay: {
-                    //     delay: 4000,
-                    // },
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,
                     },
 
-                    slidesPerColumnFill: 'row',
-                    slidesPerColumn: '3',
-                    // navigation: {
-                    //     nextEl: '.swiper-button-next',
-                    //     prevEl: '.swiper-button-prev',
-                    // },
 
-                   
-                    // observeParents:true,
-                    // observeSlideChildren: true,
-                    // observer: true,
+                    breakpoints: {
+                        320: {
+                            spaceBetween: 10,
+                            slidesPerView: 1,
+                            slidesPerColumnFill: 'row',
+                            slidesPerColumn: '3',
+                        },
+                        768: {
+                            slidesPerColumnFill: 'row',
+                            slidesPerColumn: '3',
+                            spaceBetween: 20,
+                            slidesPerView: 2,
+                        },
+                        1200: {
+                            slidesPerColumnFill: 'row',
+                            slidesPerColumn: '3',
+                            spaceBetween: 30,
+                            slidesPerView: 2,
+
+                        }
+                    }
                 })
             }
             catch (err) {
@@ -196,36 +202,36 @@ export default function SlideModule(){
         try {
             const swiper = new Swiper(sliderContainer, {
                 speed: 1000,
-                    loop: true,
-                    spaceBetween: 20,
-                    // autoplay: {
-                    //     delay: 4000,
-                    // },
-                    // pagination: {
-                    //     el: '.swiper-pagination',
-                    //     clickable: true,
-                    // },
+                loop: true,
+                spaceBetween: 20,
+                // autoplay: {
+                //     delay: 4000,
+                // },
+                // pagination: {
+                //     el: '.swiper-pagination',
+                //     clickable: true,
+                // },
 
-                    // navigation: {
-                    //     nextEl: '.swiper-button-next',
-                    //     prevEl: '.swiper-button-prev',
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
+
+                breakpoints: {
+                    // 320: {
+                    //     spaceBetween: 50
                     // },
+                    // 480: {
+                    //     spaceBetween: 30
+                    // },
+                    // 576: {
+                    //     spaceBetween: 0,
 
-                    breakpoints: {
-                        // 320: {
-                        //     spaceBetween: 50
-                        // },
-                        // 480: {
-                        //     spaceBetween: 30
-                        // },
-                        // 576: {
-                        //     spaceBetween: 0,
-
-                        // }
-                    }
-                    // observeParents:true,
-                    // observeSlideChildren: true,
-                    // observer: true,
+                    // }
+                }
+                // observeParents:true,
+                // observeSlideChildren: true,
+                // observer: true,
             })
         }
         catch (err) {

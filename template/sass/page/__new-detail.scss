@@ -1,0 +1,199 @@
+.post-detail{
+    padding: 70px 0 60px;
+    .column{
+        &.post-txt{
+            width: calc(100% / 12 * 8);
+        }
+
+        &.post-sidebar{
+            width: calc(100% / 12 * 4);
+        }
+    }
+
+    .post-tile{
+        margin-bottom: 20px;
+        @include lh(38,30);
+    }
+
+    .post-fot{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: rgba($color: $b-cl, $alpha: .7);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 170px;
+            height: 2px;
+            background-color: $main-cl;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            
+        }
+
+        .post-social{
+            display: flex;
+            align-items: center;
+
+            .social-item{
+                &:not(:first-child){
+                    margin-left: 15px;
+                }
+            }
+
+            .social-link{
+                display: flex;
+                align-items: center;
+                transition: all .3s ease;
+                &:hover{
+                    color: $main-cl;
+                }
+                img{
+                    margin-right: 5px;
+                    filter: brightness(0) invert(0);
+                }
+            }
+        }
+    }
+
+    .post-intro{
+        max-width: 670px;
+        color: rgba($color: $b-cl, $alpha: .7);
+        @include lh(24,16);
+        margin-bottom: 30px;
+    }
+
+    .post-tag{
+        margin-top: 30px;
+        .tag-link{
+            transition: all .3s ease;
+            color: rgba($color: $b-cl, $alpha: .7);
+            &:hover{
+                color: $main-cl;
+            }
+            
+            &:not(:first-child){
+                margin-left: 15px;
+            }
+
+            &.active{
+                color: $main-cl;
+            }
+        }
+    }
+
+    .box-img{
+        margin-bottom: 30px;
+        img{
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .box-small-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 30px 0;
+        .small-img{
+            width: calc(50% - 15px);
+            margin-bottom: 25px;
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
+
+            span{
+                color: rgba($color: $b-cl, $alpha: .7);
+                margin-top: 10px;
+                display: block;
+            }
+        }
+    }
+
+    .mona-content{
+        p{
+            color: rgba($color: $b-cl, $alpha: .7);
+            @include fz-16;
+            @include lh(24,16);
+        }
+
+        h4{
+            @include fz-20;
+        }
+    }
+
+    .post-footer{
+        display: flex;
+        padding: 30px 0;
+        border-top: 1px solid rgba($color: $b-cl, $alpha: .2);
+        border-bottom: 1px solid rgba($color: $b-cl, $alpha: .2);
+        justify-content: space-between;
+        .postft-infomation{
+            display: flex;
+            .postft-img{
+                width: 70px;
+                height: 70px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .postft-tx{
+                padding-left: 15px;
+                width: calc(100% - 70px);
+            }
+
+            .postft-label{
+                color: rgba($color: $b-cl, $alpha: .7);
+                @include lh(17,14);
+            }
+
+            .postft-more{
+                color: rgba($color: $b-cl, $alpha: .7);
+                margin-top: 10px;
+                transition: all .3s ease;
+                &:hover{
+                    color: $main-cl;
+                }
+            }
+        }
+        .postft-ifo{
+            display: flex;
+
+            .postft-box{
+                &:not(:first-child){
+                    margin-left: 30px;
+                }
+            }
+
+            .postft-ti{
+                color: rgba($color: $b-cl, $alpha: .7);
+            }
+
+            .postft-number{
+                
+            }
+        }
+    }
+
+    .breadcrumb{
+        margin-top: 10px;
+    }
+
+
+
+    
+
+
+}

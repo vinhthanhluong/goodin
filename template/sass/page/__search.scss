@@ -1,10 +1,15 @@
 .bsearch{
     .search-box{
         position: relative;
+        width: calc(100% / 12 * 9);
+        @include max-media($bk-d-992){
+            width: 100%;
+        }
         .f-submit{
             position: absolute;
-            top: 10px;
+            top: 50%;
             left: 0;
+            transform: translateY(-50%);
             width: 24px;
             height: 24px;
             line-height: 24px;
@@ -13,18 +18,18 @@
             border: none;
             font-size: 24px;
             color: $main-cl;
-            
+            @include max-media($bk-d-992){
+                // top: 4px;
+            }
         }
 
 
         .f-control{
             border: none;
-            border-bottom: 1px solid $main-cl;
+          
             border-radius: 0;
             padding: 0px;
             padding-left: 40px;
-            padding-bottom: 20px;
-            padding-right: 200px;
             @include fz-30;
             height: auto;
             &::placeholder{
@@ -38,12 +43,28 @@
 
     .search-wrapper{
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 1px solid $main-cl;
+        padding-bottom: 20px;
+        @include max-media($bk-d-992){
+            flex-direction: column-reverse;
+            padding-bottom: 10px;
+        }
         .breadcrumb{
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            width: max-content;
+            width: calc(100% / 12 * 3);
+            @include max-media($bk-d-992){
+                width: 100%;
+                padding-bottom: 10px;
+            }
+
+            .breadcrumb-menu{
+                @include max-media($bk-d-992){
+                    justify-content: flex-start;
+                }
+            }
+           
         }
     }
 
