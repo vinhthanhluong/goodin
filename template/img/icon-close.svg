@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6" height="6" viewBox="0 0 6 6">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_169" data-name="Rectangle 169" width="6" height="6" transform="translate(1359 345)" fill="#878175" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-close" transform="translate(-1359 -345)" clip-path="url(#clip-path)">
+    <path id="close_1_" data-name="close (1)" d="M1.208,7.078a.214.214,0,0,0,.3,0L4.144,4.445,6.779,7.078a.214.214,0,0,0,.3-.3L4.447,4.142,7.081,1.507a.214.214,0,1,0-.3-.3L4.144,3.838,1.51,1.2a.214.214,0,0,0-.3.3L3.841,4.142,1.208,6.776a.214.214,0,0,0,0,.3Z" transform="translate(1357.855 343.859)" fill="#878175"/>
+  </g>
+</svg>

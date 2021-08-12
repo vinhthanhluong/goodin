@@ -1,4 +1,5 @@
 .post-featured{
+    overflow: hidden;
     .post-title{
         margin-bottom: 25px;
         @include lh(38,30);
@@ -21,7 +22,7 @@
 }
 
 .post-news{
-
+    overflow: hidden;
     .swiper-container{
         padding-bottom: 50px;
     }
@@ -70,6 +71,7 @@
 }
 
 .post-fashion{
+    overflow: hidden;
     .column{
         width: calc(100% / 12 * 4);
         @include max-media($bk-d-992){

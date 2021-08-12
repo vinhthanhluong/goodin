@@ -20,6 +20,29 @@
 	.swiper-pagination {
 		position: absolute;
 		bottom: 10px;
+		display: none;
+	}
+
+	.swiper-pagination-bullet{
+		&-active{
+			background-color: $main-cl;
+		}
+	}
+
+	.swiper-slide-active{
+		.banners-title{
+			@include min-media($bk-768){
+				animation: bounceInRight 1s;
+				animation-delay: .4s;
+			}
+		}
+
+		.banners-item{
+			@include min-media($bk-768){
+				animation: fadeInUpBig 1s;
+				animation-delay: .4s;
+			}
+		}
 	}
 
 	margin-top: 30px;

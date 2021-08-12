@@ -1,0 +1,179 @@
+.box-edit{
+    overflow: hidden;
+    .edit-head{
+        border-bottom: 1px solid rgba($color: $b-cl, $alpha: .2);
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        @include max-media($bk-d-768){
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+        }
+        .columns{
+            justify-content: space-between;
+            align-items: center;
+            @include max-media($bk-d-768){
+                flex-direction: column-reverse;
+            }
+        }
+    
+        .column{
+            @include max-media($bk-d-768){
+                width: 100%;
+    
+            }
+        }
+    }
+
+    .edit-photo{
+        margin-bottom: 25px;
+    }
+
+    .edit-add-photo{
+        height: 250px;
+        width: 100%;
+        background-color: #F8F8F8;
+        border: 1px dashed $g-7070-cl;
+        position: relative;
+        .text-bf{
+            @include pos-mid;
+        }   
+    }
+
+    .edit-text-post{
+        margin-top: 30px;
+        .edit-label{
+            color: rgba($color: $b-cl, $alpha: .7);
+            margin-bottom: 4px;
+        }
+
+        .edit-conte{
+            border-bottom: 1px solid rgba($color: $g-7070-cl, $alpha: .1);
+            padding-bottom: 10px;
+        }
+
+        .edit-con{
+            display: flex;
+            flex-wrap: wrap;
+            margin: -5px;
+        }
+
+        .edit-item{
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            .edit-close{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: #F8F8F8;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .edit-content-post{
+        .edit-label{
+            color: rgba($color: $b-cl, $alpha: .7);
+            margin-bottom: 15px;
+        }
+
+        .edit-ft{
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+            @include max-media($bk-d-992){
+                margin: -7.5px;
+            }
+        }
+
+        .column{
+            width: 50%;
+            @include max-media($bk-d-768){
+                width: 100%;
+            }
+        }
+
+        .edit-tagline{
+            .edit-la{
+                margin-bottom: 4px;
+            }
+            
+            .edit-conte{
+                display: flex;
+                border-bottom: 1px solid rgba($color: $g-7070-cl, $alpha: .1);
+                padding-bottom: 10px;
+                .edit-item{
+                    &:not(:first-child){
+                        margin-left: 15px;
+                    }
+
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $main-cl;
+                    }
+                }
+            }
+        }
+
+        .edit-select{
+            .edit-la{
+                color: rgba($color: $b-cl, $alpha: .7);
+                margin-bottom: 4px;
+                position: relative;
+                &::after{
+                    content: '';
+                    background-image: url('../img/icon-select.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    margin-left: 7px;
+                }
+            }
+
+            .f-control{
+                border-bottom: 1px solid rgba($color: $b-cl, $alpha: .7);
+                border: none;
+                border-bottom: 1px solid rgba($color: $g-7070-cl, $alpha: .1);
+                border-radius: 0;
+                padding: 0;
+                padding-bottom: 10px;
+                height: auto;
+                cursor: pointer;
+            }
+        }
+
+        .edit-submit{
+            text-align: center;
+            margin-top: 30px;
+            .f-submit{
+                border-radius: 100px;
+                background-color: $main-cl;
+                color: $w-cl;
+                @include fz-16;
+                outline: none;
+                border: none;
+                width: 200px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                cursor: pointer;
+                transition: all .3s ease;
+                &:hover{
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+
+    }
+    
+}

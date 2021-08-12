@@ -1,5 +1,5 @@
 .box-box {
-
+    overflow: hidden;
     .columns {
         @include max-media($bk-d-768) {
             flex-direction: column-reverse;
@@ -78,6 +78,7 @@
 }
 
 .about-us {
+    overflow: hidden;
     .columns {
         margin: -30px;
 
@@ -220,6 +221,7 @@
 }
 
 .about-people {
+    overflow: hidden;
     .about-slide {
         // overflow: hidden;
     }
@@ -317,7 +319,7 @@
 }
 
 .about-brand {
-    
+    overflow: hidden;
     .swiper-wrapper{
         // border: 1px solid #D9D9D9;
         border-bottom: 1px solid #D9D9D9;
